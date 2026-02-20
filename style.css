@@ -6,6 +6,7 @@
   --clr-secondary: #4668a5;
   --clr-light: #ffffff;
   --clr-dark: #2b2b2b;
+  --clr--grey: #d9d9d9;
   --font: "Poppins", sans-serif;
 }
 * {
@@ -126,7 +127,7 @@ img {
 .header {
   position: relative;
   z-index: 99;
-  padding: 3rem 0;
+  padding: 2.5rem 0;
   background-color: var(--clr-light);
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -314,7 +315,7 @@ img {
 }
 .testimonial__text h4 {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--clr-light);
   padding-top: 4rem;
 }
@@ -336,6 +337,9 @@ img {
   }
   .testimonial__text h4 {
     font-size: 20px;
+  }
+  .testimonial__img img {
+    padding-bottom: 2rem;
   }
 }
 .footer {
@@ -384,6 +388,185 @@ img {
   }
   .homes__text h3 {
     font-size: 24px;
+  }
+}
+.about {
+  background-image: url(./IMG/about\ banner.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about__text {
+  width: 58rem;
+  padding: 12rem 0;
+}
+.about__text h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--clr-primary);
+  text-align: justify;
+}
+.about__text p {
+  padding: 4rem 0 6rem;
+}
+@media screen and (max-width: 520px) {
+  .about__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .about__text h2 {
+    font-size: 36px;
+    text-align: center;
+    width: auto;
+  }
+}
+.offer .title h3 {
+  color: var(--clr-dark);
+  padding: 6rem 0 2rem;
+  text-align: center;
+}
+.offer .title p {
+  color: var(--clr-dark);
+  text-align: justify;
+  padding-bottom: 6rem;
+}
+.offer__card {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  background-color: var(--clr--grey);
+  gap: 1rem;
+  align-items: center;
+}
+.offer .container {
+  padding: 0 10rem;
+}
+.offer__text p {
+  text-align: justify;
+  padding-right: 3rem;
+}
+.offer__text h4 {
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 3rem;
+}
+.offer__img img {
+  height: 100%;
+}
+.offer__wrapper {
+  gap: 3rem;
+  display: grid;
+  margin-bottom: 8rem;
+}
+@media screen and (max-width: 520px) {
+  .offer__card {
+    grid-template-columns: 1fr;
+  }
+  .offer .container {
+    padding: 0 5rem;
+  }
+  .offer__text h4 {
+  font-size: 20px;
+
+}
+}
+
+/* contact */
+.contact {
+  padding: 4rem 0;
+  height: 76vh;
+}
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
+  gap: 10rem;
+}
+.contact p {
+  padding: 4rem 0;
+}
+.contact__left p {
+  padding: 1rem 0 4rem;
+  width: 35rem;
+}
+.contact__left h3 {
+  font-size: 36px;
+  font-weight: 700;
+}
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact__details li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
+}
+.contact__details a {
+  color: var(--clr-light);
+  font-size: 25px;
+  padding: 1rem;
+  background-color: var(--clr-primary);
+  border-radius: 100%;
+}
+.contact__details p {
+  padding: 0;
+}
+.contact__details h5 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.contact__right form {
+  padding-right: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.contact__right .btn.bg--primary {
+  margin-top: 2rem;
+  width: 16rem;
+}
+.contact__right input {
+  padding: 1.5rem;
+  border-radius: 15px;
+  border: 1px solid var(--clr-dark);
+  font-weight: 700;
+}
+.contact__right textarea {
+  padding: 1.5rem;
+  resize: none;
+  height: 15rem;
+  border-radius: 15px;
+  border: 1px solid var(--clr-dark);
+  font-weight: 700;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+.name input {
+  width: 500%;
+}
+@media screen and (max-width: 520px) {
+  .contact__wrapper {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+  .contact {
+    height: 100%;
+  }
+  .contact__right form {
+    padding: 0;
+  }
+  .contact p {
+    padding: 2rem 0;
+  }
+  .contact__details p {
+    padding: 0;
   }
 }
 /* Assets */
@@ -439,7 +622,7 @@ img {
 .card__title h4 {
   padding: 1rem 1rem 0;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .card__title p {
   padding: 0 1rem 1rem;
