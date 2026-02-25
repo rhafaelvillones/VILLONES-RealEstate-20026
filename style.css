@@ -220,7 +220,7 @@ img {
     transform: translate(0, -7.5px) rotate(-225deg);
     transition: 0.5s ease;
   }
-  .btn.bg--primary {
+  .header .btn.bg--primary {
     border: 1px solid var(--clr-light);
   }
 }
