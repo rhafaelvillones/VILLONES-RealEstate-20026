@@ -124,6 +124,7 @@ img {
   margin: 0 auto;
   padding: 0 1.5rem;
 }
+/* header */
 .header {
   position: relative;
   z-index: 99;
@@ -223,6 +224,7 @@ img {
     border: 1px solid var(--clr-light);
   }
 }
+/* home */
 .banner {
   background-image: url(./IMG/home\ banner.png);
   background-position: center;
@@ -390,6 +392,7 @@ img {
     font-size: 24px;
   }
 }
+/* about */
 .about {
   background-image: url(./IMG/about\ banner.png);
   background-position: center;
@@ -404,15 +407,19 @@ img {
   font-size: 48px;
   font-weight: 700;
   color: var(--clr-primary);
-  text-align: justify;
 }
 .about__text p {
   padding: 4rem 0 6rem;
+  text-align: justify;
 }
 @media screen and (max-width: 520px) {
   .about__wrapper {
     display: flex;
     flex-direction: row;
+    padding: 0 2rem;
+  }
+  .about__text {
+    padding: 4rem 0;
   }
   .about__text h2 {
     font-size: 36px;
@@ -464,10 +471,17 @@ img {
   .offer .container {
     padding: 0 5rem;
   }
+  .offer__text {
+    padding: 2rem;
+    text-align: center;
+  }
   .offer__text h4 {
-  font-size: 20px;
-
-}
+    font-size: 20px;
+    padding-bottom: 2rem;
+  }
+  .offer__text p {
+    padding-right: 0;
+  }
 }
 
 /* contact */
